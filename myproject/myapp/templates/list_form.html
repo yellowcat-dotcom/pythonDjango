@@ -1,0 +1,17 @@
+<!-- list_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ model_name }} List</title>
+</head>
+<body>
+    <h2>{{ model_name }} List</h2>
+    <ul>
+        {% for obj in objects %}
+            <li>{{ obj }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
